@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <meta name="title" content="404">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+            font-family: "Edit Undo BRK", sans-serif;
+        }
+
+        @keyframes blink {
+            0% {
+                text-shadow: red 0px 0px 30px;
+            }
+
+            50% {
+                text-shadow: none;
+            }
+
+            100% {
+                text-shadow: red 0px 0px 30px;
+            }
+        }
+
+        h2 {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            text-align: center;
+            color: gray;
+            font-size: 20px;
+        }
+    </style>
+    <h1 style="color: white; font-size: 100px; text-align: center; margin-top: 18%; animation: blink 1s infinite;;">
+        Error 404</h1>
+    <h2>Website is not ready yet. Please, Check this page later</h2>
+</body>
