@@ -1361,10 +1361,6 @@ iframe {
     margin-top: 100px;
     width: 50%;
   }
-  img {
-    width: 30%;
-    height: 50%;
-  }
   footer {
     height: 500px;
   }
@@ -1405,6 +1401,21 @@ iframe {
 }
 :root {
   --page-background: 277deg, 55%, 12%;
+}
+
+.axerimg {
+  float: left;
+  width: 30%;
+  transform: scale(-1, 1);
+}
+@media (pointer: coarse)
+{
+  .axerimg {
+  float: left;
+  padding: 350px 0px 0px 0px;
+  width: 300px;
+  transform: rotateZ(90deg);
+  }
 }
 
 button {
@@ -1459,7 +1470,7 @@ button:hover {
   --uib-size: 50px;
   --uib-speed: 2s;
   --uib-color: rgb(255, 255, 255);
-  
+
   height: var(--uib-size);
   width: var(--uib-size);
   vertical-align: middle;
@@ -1524,7 +1535,7 @@ button:hover {
   float: left;
 }
 
-.pc{
+.pc {
   height: 100px;
   float: left;
 }
