@@ -42,3 +42,28 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+
+window.addEventListener("scroll", upBtn);
+function upBtn() {
+var btn = $('#upbutton');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.scrollY;
+  var scrollHeight = document.documentElement.scrollHeight;
+  var gradientOpacity = scrollTop / scrollHeight;
+
+  document.querySelector('.bg-gradient-animated').style.opacity = gradientOpacity;
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+}
