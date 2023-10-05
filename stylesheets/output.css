@@ -711,22 +711,16 @@ video {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-\[30deg\] {
   --tw-rotate: 30deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform-gpu {
-  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0)
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .items-center {
@@ -746,19 +740,19 @@ video {
   column-gap: 1.5rem;
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+.space-y-2> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
+.divide-y> :not([hidden])~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.divide-gray-500\/10 > :not([hidden]) ~ :not([hidden]) {
+.divide-gray-500\/10> :not([hidden])~ :not([hidden]) {
   border-color: rgb(107 114 128 / 0.1);
 }
 
@@ -820,6 +814,7 @@ video {
   0% {
     background-position-y: 0;
   }
+
   100% {
     background-position-y: 200%;
   }
@@ -1014,10 +1009,8 @@ video {
 }
 
 .ring-1 {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
-    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
-    calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
     var(--tw-shadow, 0 0 #0000);
 }
@@ -1033,9 +1026,7 @@ video {
 
 .blur-3xl {
   --tw-blur: blur(64px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
-    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
-    var(--tw-sepia) var(--tw-drop-shadow);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -1102,48 +1093,54 @@ html {
 
 @media screen and (min-width: 600px) {
 
-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 70px #000;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  width: 100%;
-}
-.logo img {
-  height: 35px;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav li {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-nav a {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-nav a:hover {
-  background-color: rgb(255, 255, 255, 0.4);
-  box-shadow: #949494 0px 0px 10px;
-}
+  header {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 70px #000;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+    box-shadow: #949494 0px 0px 10px;
+  }
 }
 
 @media (pointer: coarse) {
@@ -1315,6 +1312,7 @@ nav a:hover {
   transform: translateX(0);
   opacity: 1;
 }
+
 .revealleft {
   position: relative;
   transform: translateX(-150px);
@@ -1331,9 +1329,11 @@ nav a:hover {
   0% {
     text-shadow: orangered 0px 0px 15px;
   }
+
   50% {
     text-shadow: none;
   }
+
   100% {
     text-shadow: orangered 0px 0px 15px;
   }
@@ -1359,12 +1359,13 @@ nav a:hover {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
+  transition: background-color .3s,
     opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
 }
+
 #upbutton::after {
   content: "\f077";
   font-family: FontAwesome;
@@ -1374,13 +1375,16 @@ nav a:hover {
   line-height: 50px;
   color: #fff;
 }
+
 #upbutton:hover {
   cursor: pointer;
   background-color: #333;
 }
+
 #upbutton:active {
   background-color: #555;
 }
+
 #upbutton.show {
   opacity: 1;
   visibility: visible;
@@ -1396,8 +1400,7 @@ nav a:hover {
   vertical-align: baseline;
 }
 
-.iframe-container 
-{
+.iframe-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1405,30 +1408,31 @@ nav a:hover {
 }
 
 @media screen and (min-width: 600px) {
-iframe {
-  float: right;
-  position: relative;
-  box-shadow: 0px 0px 30px #181818;
-  border-style: none;
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
+  iframe {
+    float: right;
+    position: relative;
+    box-shadow: 0px 0px 30px #181818;
+    border-style: none;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
 
-.iframe_Mike {
-  width: 100%;
-  height: 100%;
-  max-height: 700px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 70px;
-  margin-top: 300px;
-}
+  .iframe_Mike {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-top: 300px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   footer {
     height: 500px;
   }
+
   iframe {
     width: 100%;
     height: 70vh;
@@ -1436,7 +1440,7 @@ iframe {
     margin: 0 auto;
     padding: 20px;
   }
-  
+
   .iframe_Mike {
     width: 100%;
     height: 70vh;
@@ -1455,6 +1459,7 @@ iframe {
   justify-content: center;
   text-align: center;
 }
+
 #features {
   height: 2000px;
   display: flex;
@@ -1464,6 +1469,7 @@ iframe {
   padding: 50px;
   background-color: black;
 }
+
 .centerer {
   display: flex;
   align-items: center;
@@ -1479,6 +1485,7 @@ iframe {
   width: 100%;
   height: 100%;
 }
+
 :root {
   --page-background: 277deg, 55%, 12%;
 }
@@ -1488,13 +1495,13 @@ iframe {
   width: 30%;
   transform: scale(-1, 1);
 }
-@media (pointer: coarse)
-{
+
+@media (pointer: coarse) {
   .axerimg {
-  float: left;
-  padding: 350px 0px 0px 0px;
-  width: 300px;
-  transform: rotateZ(90deg);
+    float: left;
+    padding: 350px 0px 0px 0px;
+    width: 300px;
+    transform: rotateZ(90deg);
   }
 }
 
@@ -1503,13 +1510,13 @@ iframe {
   width: 30%;
   transform: scale(-1, 1);
 }
-@media (pointer: coarse)
-{
+
+@media (pointer: coarse) {
   .mikeimg {
-  float: right;
-  padding: 650px 0px 0px 0px;
-  width: 300px;
-  transform: rotateZ(-90deg);
+    float: right;
+    padding: 650px 0px 0px 0px;
+    width: 300px;
+    transform: rotateZ(-90deg);
   }
 }
 
@@ -1563,6 +1570,7 @@ button:hover {
   text-align: center;
   color: black;
 }
+
 @media (pointer: coarse) {
   #footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1575,6 +1583,7 @@ button:hover {
     text-align: center;
     color: black;
   }
+
   #footer img {
     width: 110px;
   }
@@ -1583,7 +1592,7 @@ button:hover {
 .ring {
   --uib-size: 50px;
   --uib-speed: 2s;
-  --uib-color: rgb(255, 255, 255);
+  --uib-color: rgb(195, 0, 255);
 
   height: var(--uib-size);
   width: var(--uib-size);
@@ -1612,10 +1621,12 @@ button:hover {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
   }
+
   50% {
     stroke-dasharray: 90, 200;
     stroke-dashoffset: -35px;
   }
+
   100% {
     stroke-dashoffset: -124px;
   }
@@ -1631,7 +1642,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure the loader is on top of other content */
+  z-index: 9999;
+  /* Ensure the loader is on top of other content */
 }
 
 /* Hide the loader initially */
@@ -1767,10 +1779,8 @@ button:hover {
   }
 
   .sm\:ring-1 {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
-      var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
-      calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
       var(--tw-shadow, 0 0 #0000);
   }
